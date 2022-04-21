@@ -1,0 +1,111 @@
+
+
+		Basic programming - classes 2
+	
+
+		Simple math
+		***********
+
+
+		I. Arithmetic Operators 
+		------------------------
+
+
+	+   - Addition		
+		
+	-   - Subtraction		 
+
+	*   - Multiplication		
+
+	/   - Division		
+
+	%  - Modulus Operator 
+	(remainder of integer division)	 
+
+	
+		
+		II. Relational Operators
+		-------------------------
+
+		
+	==    -  Checks whether two values are equal
+
+	!=    -  Checks whether two values are different
+
+	>     -  Checks whether one value is greater than another value 
+
+	<     -  Checks whether one value is less than another value
+
+	>=    -  Checks whether one value is greater than or equal to another value
+
+	<=    -  Checks whether one value is less than or equal to another value
+
+		
+		IV. Logical Operators
+		----------------------
+
+
+	&&     -  AND Operator
+
+	||     -  OR Operator
+
+	!      -  NOT Operator
+
+
+	
+		Control statements
+		******************
+
+			
+		I. Conditional statements
+		--------------------------
+
+
+		1.  if   statement
+
+
+	if ( condition )
+	{  
+	     instruction; 
+	}
+	
+
+		2.  if ... else   statement
+
+
+	if ( condition )
+	{  
+	     instruction_1; 
+	}
+	else
+	{  
+	     instruction_2; 
+	}  
+
+
+		3.  if ... else if ... else   statement
+
+
+	if ( condition_1 )
+	{  
+	     instruction_1;  
+	}
+	else if ( condition_2 )
+	{  
+	     instruction_2;  
+	}
+	else
+	{  
+	     instruction_3;
+	}  
+  
+
+
+		4. Conditional (or Ternary) Operator (  ? : )
+		
+
+	condition ? instruction_1 : instruction_2;
+
+
+
+		

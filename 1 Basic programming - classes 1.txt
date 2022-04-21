@@ -1,0 +1,177 @@
+
+		
+
+		Basic programming - classes 1
+
+
+	
+		Extension of file   
+		*************
+
+		name_of_file.c
+
+			
+		Main function
+		***********
+
+		int main()
+		{
+		    blocks_of_instructions
+		    return 0;
+		}
+
+
+		Comments 
+		*********
+
+		/* text */  -  text is omitted by the compiler
+
+
+		Header file	
+		*********
+
+		#include<stdio.h>		/* printf(), scanf() */
+
+
+		Variables, Types and Constants
+		*************************
+
+			I. Variables
+
+	Variable is a name given to a storage area that our program can manipulate. 
+	Each variable is of a specific type, which determines its size.
+		
+
+		Declaration of variable:
+		-------------------------
+
+		type name_of_variable;
+
+
+		Initialization of variable:
+		---------------------------
+
+		name_of_variable = value;
+
+
+	
+			II. Types
+
+  	 The type of a variable determines how much space it occupies in storage.
+
+	
+		The Basic Data Types
+		-----------------------
+
+	1.   int 		integer
+
+	2.   char		character
+
+	3.   float		real numbers
+
+	4.   void		absence of type
+
+	
+
+			III. Constants
+		
+	#define identifier value
+
+
+ 		Assignment Operator
+		*****************
+
+	=  - Asings value form right side operand to left side operand,   e.g   int n = 1;
+
+	
+		Input / Output Instructions
+		**********************
+
+	The supplies and returns of information to a computer are called input and output.
+	Standard Library file stdio.h is necessary.
+
+
+			I. Output 
+
+	
+		1. printf()
+
+
+	The print() function takes a string as its argument 
+	and prints it to the screen.
+
+	e.g.   printf("Hallo, World!");	
+
+	Remark. printf() function prints strings!
+	How can we print numbers?
+
+		Format specifiers
+		-------------------
+
+	%i - int   ( also: %d - decimal)
+	%f - float	    
+	precision:   %.kf  - k decimal places		
+	%c - char
+	%s - string  ( char* )
+	%x - hexadecimal
+
+		
+		Tabs and newlines
+		--------------------
+
+	\n - new line
+	\t  - tabulator
+
+
+	printf( format, arguments );
+
+	
+	e.g   	int a = 5;
+		printf("\n\tThe number %d is the positive integer.\n", a );
+
+
+
+			II. Input 
+
+
+		1. scanf()
+
+	scanf( format, &argument );
+
+	The scanf() function passes the address of the variable
+
+	& - address operator
+
+	e.g   	int a;
+		scanf("%d", &a);   
+
+
+	
+		Declaration and initialization of string
+		******************************
+
+	e.g     char name[20] = "Margaret";  
+		
+
+
+		switch  statement
+		***************
+
+
+	switch ( expression ) 
+	{
+	case constant-expression:
+	     statments;
+	     break;
+	case constant-expression:
+	     statments;
+	     break;
+		.
+		.
+		.
+	default:
+	     statments;
+	}
+
+
+
