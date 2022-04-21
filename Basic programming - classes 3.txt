@@ -1,0 +1,47 @@
+
+
+	Basic programming - classes 3
+
+
+		Increment Operator
+		-------------------
+
+	i++  -   increment operator
+
+
+
+			II. Loops
+			----------
+
+
+		1. while   loop
+
+
+	initialization;
+
+	while ( condition )
+	{
+	     statments;
+	     increment;
+	}
+
+	
+
+
+		2. for   loop
+
+
+	for ( initialization; condition; increment )
+	{
+	     statments;
+	}
+
+
+		break and continue statements
+		------------------------------
+
+	break;  	- exits the loop. 
+	continue; 	- passes to the next iteration. 
+
+
+
