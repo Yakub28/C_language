@@ -1,0 +1,114 @@
+
+		Basic programming - classes 6
+
+
+
+		Arrays ( part II )
+		******************
+
+
+		Two Dimensional Arrays
+		***********************
+
+
+	A two-dimensional array is a list of one-dimensional arrays. 
+	
+
+		Declaration
+		-----------
+
+
+	type   array_name [ size_1 ][ size_2 ];
+			     |            |
+			Row nr     Column nr
+
+
+		Example:
+
+
+	             Column 0	      Column 1	     Column 2
+		 _______________________________________________
+		|		|		|		|
+	Row 0	|     a[0][0]	|     a[0][1]   |     a[0][2]   |
+		|_______________|_______________|_______________|
+		|		|		|		|
+	Row 1	|     a[1][0]	|     a[1][1]   |     a[1][2]   |
+		|_______________|_______________|_______________|
+		|		|		|		|
+	Row 2	|     a[2][0]   |     a[2][1]   |     a[2][2]   |
+		|_______________|_______________|_______________|
+
+
+
+		Initialization
+		--------------
+
+
+	int a[3][4] = {
+			{0, 1, 2, 3} ,  /* initializers for row indexed by 0 */ 
+	                {4, 5, 6, 7} ,  /* initializers for row indexed by 1 */ 
+		        {8, 9, 10, 11}  /* initializers for row indexed by 2 */ 
+		      };
+
+
+		Accessing the elements
+		-----------------------
+
+	An element in 2-dimensional array is accessed by 
+	row index and column index: a[i][j].
+
+
+		
+		Pointers 
+		********
+
+
+	For example.
+
+	int t[][] = { { 1, 2, 3 }, { 4, 5, 6 } };
+    	int **p = t;
+
+
+	Picture
+
+			           	          					           
+	    *(*(p+0)+0)     *(*(p+0)+1)	    *(*(p+0)+2)			           *(p+0)	     *(p+1)				p
+	 ________________________________________________	                 ________________________________                _______________
+      	|        0	|       1	|        2	|	    <--		|    f814a0	|    f814a4	|	<--	|    bb1480     |
+ f814a0	|_______________|_______________|_______________|                	|_______________|_______________|  	   	|_______________|			
+	|        3	|       4  	|        5	|		         bb1480
+ f814a4	|_______________|_______________|_______________|                	  			
+	    *(*(p+1)+0)	    *(*(p+1)+1)	    *(*(p+1)+2)			
+							                 					
+            		
+							          
+		
+
+		Dynamic memory allocation 
+		**************************
+
+	
+		malloc()  function
+		-------------------	
+
+
+	Example.
+
+
+	int ** A = ( int ** ) malloc ( n * sizeof ( int * ) );
+    	for( int i = 0; i < n; i++ )
+    	{
+        	     *(A+i) = ( int * ) malloc ( m * sizeof ( int ) );
+    	}
+
+
+		Free memory
+		------------
+
+	 for( int i = 0; i < n; i++ )
+        	{
+    	     free( *(A+i)  ); // *A++
+        	}
+    	free( A );
+
+
